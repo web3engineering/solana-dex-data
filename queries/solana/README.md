@@ -18,22 +18,6 @@ touches and what it returns.
 | `10-table-coverage.sql` | Row counts and size of every table, plus how far one goes back |
 | `11-unique-wallets.sql` | Unique wallets trading per day |
 
-## Three things worth knowing
-
-**Retention differs by table.** `pumpfun_token_creation` holds launches back to
-January 2024. `pumpswap_all_swaps` and `pfamm_migrations` keep a rolling year,
-`meteora_swaps` a rolling 90 days. The time windows in these files reflect that,
-so widen them only where the data goes back.
-
-**The server runs on America/Los_Angeles time.** Timestamp columns return
-server time, not UTC. Wrap them in `toTimeZone(block_time, 'UTC')` whenever you
-line the data up against anything else.
-
-**Some tables deduplicate on merge.** `pumpfun_token_creation` is a
-ReplacingMergeTree, so a recent window can still contain duplicate rows until
-the parts merge. Add `FINAL` when you need exact counts, or drop duplicates
-after reading.
-
 ## Getting access
 
 Read-only credentials, $200/month per chain, one-week free trial.
