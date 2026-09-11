@@ -9,7 +9,7 @@
 [![X](https://img.shields.io/badge/X-follow-000000?style=flat-square)](https://x.com/onchain_divers)
 [![Free trial](https://img.shields.io/badge/Free%20trial-request-2ea043?style=flat-square)](https://docs.google.com/forms/d/e/1FAIpQLSduVHVt51hEMGD2847Yj0rQTy1U5ogIgHPHutKyZth0ALhrwA/viewform)
 
-**16B+ rows · 3.1 TB · since January 2024 · 4 chains**
+**16B+ rows · since January 2024 · 4 chains**
 
 </div>
 
