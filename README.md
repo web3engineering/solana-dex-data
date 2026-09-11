@@ -49,7 +49,7 @@ Full schemas, row counts and column descriptions live in the
 ## What the data looks like
 
 The ten most prolific Pump.fun creators of the last 30 days, and how much of
-each token's supply they bought into their own launch:
+each token's supply they bought into their own launch bundle:
 
 ```sql
 SELECT
@@ -74,8 +74,9 @@ LIMIT 10
 | `AJNaS…fqvQ2` | 3,699 | 0.0 | 0.0 | 2026-08-31 23:07 |
 
 One address launched 17,229 tokens in a month, roughly 570 a day, buying an
-average of 21.5% of each token's supply at launch. That pattern is only visible
-if you hold the full launch history rather than a rolling window.
+average of 21.5% of each token's supply into its own launch bundle. That
+pattern is only visible if you hold the full launch history rather than a
+rolling window.
 
 Run against the live database on 1 September 2026. Addresses shortened for
 display.
